@@ -39,7 +39,7 @@ function buildResponse(responseParameters) {
 
 const handlers = {
 
-  SetTable(event, emitResponse) {
+  IntentSetTable(event, emitResponse) {
     const dayOfWeek = moment().tz(TIMEZONE).day()
 
     const chosenOne = TABLE_DUTY_ASSIGNMENT[dayOfWeek]
@@ -50,14 +50,14 @@ const handlers = {
     emitResponse({ speechText })
   },
 
-  PickSomeone(event, emitResponse) {
+  IntentPickSomeone(event, emitResponse) {
     const randomIndex = Math.floor(Math.random() * FAMILY_MEMBERS.length)
     const chosenOne = FAMILY_MEMBERS[randomIndex]
     const speechText = `the lucky winner is ${chosenOne}`
     emitResponse({ speechText })
   },
 
-  MummyInstead(event, emitResponse) {
+  IntentMummyInstead(event, emitResponse) {
     const speechText = `
     Aren't you ashamed?! Mummy is already doing pretty much everything in the house!
     You should be thankful to her and try your best to help her everyday.
