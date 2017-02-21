@@ -1,0 +1,34 @@
+{
+  "name": "famility-duties",
+  "version": "0.1.0",
+  "description": "Track who should do family duties",
+  "main": "index.js",
+  "author": "Yann Rouillard",
+  "license": "Apache-2.0",
+  "config": {
+    "aws_iam_role": "arn:aws:iam::420158451431:role/lambda_basic_execution",
+    "aws_region": "us-east-1"
+  },
+  "files_to_deploy": [
+    "index.js",
+    "package.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yannrouillard/alexa-family-duties.git"
+  },
+  "dependencies": {
+    "moment-timezone": "^0.5.11"
+  },
+  "devDependencies": {
+    "dpl": "^3.7.1",
+    "eslint": "^3.16.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0"
+  },
+  "scripts": {
+    "deploy": "AWS_IAM_ROLE=$npm_package_config_aws_iam_role AWS_REGION=$npm_package_config_aws_region dpl"
+  }
+}
