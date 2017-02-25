@@ -7,7 +7,7 @@ const TIMEZONE = 'Australia/Sydney'
 
 const FAMILY_MEMBERS = ['Elea', 'Nathan', 'Raphael', 'Malia', 'Yann']
 
-const TABLE_DUTY_ASSIGNMENT = ['Daddy or mummy', 'Elea', 'Nathan', 'Raphael', 'Elea', 'Nathan', 'Daddy or mummy']
+const TABLE_DUTY_ASSIGNMENT = ['Daddy or mummy', 'Elea', 'Nathan', 'Raphael', 'Elea', 'Nathan', 'Raphael']
 
 
 /* *******************************************************************************
